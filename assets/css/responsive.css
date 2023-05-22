@@ -1,0 +1,144 @@
+/* Break point */
+
+/* PC */
+@media (min-width: 64em) {
+
+}
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    #nav li a {
+        padding: 1px 10px;
+    }
+    .col-mobile {
+        width: 100%;
+    }
+
+    .col-4 img {
+        float: none;
+    }
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+    #nav {
+        display: block;
+    }
+
+    #nav > li {
+        display: block;
+    }
+
+    #nav li a {
+        padding: 1px 24px;
+    }
+
+    #nav .subnav {
+        position: initial;
+        background: #333;
+    }
+
+    #nav .subnav a {
+        color: #fff;
+        padding: 5px 40px;
+    }
+
+    #nav .subnav:hover a {
+        background: #fff;
+    }
+
+    #nav > li:first-child {
+        display: inline-block;
+    }
+
+    #header {
+        overflow: hidden;
+    }
+
+    #header .mobile-search-btn{
+        float: right;
+        padding: 0 22px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+    }
+
+    #header .search-btn {
+        float: right;
+        padding: 0 22px;
+        cursor: pointer;
+        display: none;
+    }
+
+    #content .member-mobile-item {
+        margin-top: 45px;
+        width: 100%;
+    }
+
+    #content .member-img {
+        width: 70%;
+    }
+    .content-mobile-section {
+        padding: 16px 0 46px;
+    }
+
+    .place-mobile-list {
+        /* margin-top: 16px; */
+        width: 100%;
+    }
+
+    .place-img {
+        height: 260px;
+    }
+
+    .place-body {
+        height: 260px;
+    }
+
+    .place-btn {
+        margin-top: 59px;
+    }
+
+    .app-mobile-container {
+        padding: 48px 16px;
+    }
+
+    .row-mobile {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .col-mobile {
+        width: 100%;
+    }
+
+    .mt-mobile {
+        margin-top: 16px;
+    }
+
+    .lh-mobile {
+        line-height: 1.8;
+    }
+
+    .full-btn-mobile {
+        width: 100%;
+        margin-top: 32px;
+
+    }
+
+    .col-4 img {
+        float: none;
+    }
+
+    .footer-mobile {
+        padding: 32px 16px;
+    }
+
+    .letpac {
+        letter-spacing: 2px;
+        font-size: 18px;
+        font-weight: 550;
+        color: #333;
+    }
+
+}
