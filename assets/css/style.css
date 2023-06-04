@@ -72,6 +72,8 @@ html {
 }
 .mt-16 {
     margin-top: 16px !important;
+    overflow: hidden;
+    display: block;
 }
 
 /* 
@@ -281,6 +283,10 @@ html {
     margin-top: 20px;
 }
 
+#content .member-item:hover {
+
+}
+
 #content .member-name {
     font-size: 15px;
     text-transform: uppercase;
@@ -292,10 +298,19 @@ html {
     width: 100%;
     height: 310px;
     border-radius: 4px;
+    position: relative;
+    /* top: 0; */
+
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 #content .member-img:hover {
-    opacity: 80%;
+    opacity: 90%;
+    /* top: -2px; */
+    transform: scale(1.03);
+    border: 1.5px solid #b40909;
 }
 
 .tour-section {
@@ -348,23 +363,32 @@ html {
 .place-list {
     margin-top: 32px;
     margin-bottom: 48px;
-    /* overflow: hidden; */
+    /* overflow: hidden;
+    display: block; */
 }
 
 .place-item {
     /* float: left; */
     width: calc(100%/3);
     /* padding: 0 8px; */
+    /* display: block; */
 }
 
 .place-img {
     width: 100%;
     height: 180px;
     display: block;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    background-position: center;
 }
 
 .place-img:hover {
-    opacity: 80%;
+    transform: scale(1.1);
+}
+
+.mt-16 > ul > li {
+    overflow: hidden;
 }
 
 .place-body {
@@ -373,7 +397,7 @@ html {
     height: 196px;
     font-size: 15px;
     font-weight: 500;
-    opacity: 80%;
+    opacity: 90%;
 }
 
 .place-heading {
