@@ -37,7 +37,8 @@
             <!-- End Nav -->
             <!-- Begin Search button-->
             <div class="search-btn">
-                <i class="search-icon fa-brands fa-searchengin"></i>
+                <!-- <i class="search-icon fa-brands fa-searchengin"></i> -->
+                <i class="search-icon fa-solid fa-magnifying-glass"></i>
             </div>
 
             <!-- Mobile search button -->
@@ -62,7 +63,7 @@
                     <h2 class="text-heading">New York</h2>
                     <div class="text-decription">The atmosphere in New York is lorem ipsum.</div>
                 </div> -->
-                <img src="./assets/img/slider6.jpg"/>
+                <!-- <img src="./assets/img/slider6.jpg"/>
 
                 <img src="./assets/img/slider4.jpg"/>
 
@@ -70,7 +71,12 @@
 
                 <img src="./assets/img/h2girl.jpg"/>
 
-                <img src="./assets/img/slider5.jpg"/>
+                <img src="./assets/img/slider5.jpg"/> -->
+                <video class="video-slide" src="./assets/videos/1.mp4" muted loop autoplay></video>
+                <video class="video-slide" src="./assets/videos/2.mp4" muted loop autoplay></video>
+                <video class="video-slide" src="./assets/videos/3.mp4" muted loop autoplay></video>
+                <video class="video-slide" src="./assets/videos/4.mp4" muted loop autoplay></video>
+                <video class="video-slide" src="./assets/videos/5.mp4" muted loop autoplay></video>
             </div>
             <!-- <div class="claer"></div> -->
             <div class="dot-container">
@@ -127,11 +133,11 @@
                     <h2 class="section-heading text-white">Tour For You</h2>
                     <p class="section-sub-heading text-white">Remember to book your tickets!</p>
                     <!-- Tickets -->
-                    <ul class="tickets-list">
+                    <!-- <ul class="tickets-list">
                         <li>September <span class="sold-out">Sold out</span></li>
                         <li>November <span class="sold-out">Sold out</span></li>
                         <li>December <span class="quantity">3</span></li>
-                    </ul>
+                    </ul> -->
                     <!-- Place -->
                     <div class="row place-list">
                         <div class="place-mobile-list col col-third mt-16 ">
@@ -250,25 +256,26 @@
             </div>
             <!-- Map section -->
             <div class="map-section">
-                <img src="./assets/img/h2r.jpg" alt="h2r">
+                <img src="./assets/img/img_map.png" alt="h2r">
+                <!-- <video class="video-map" src="./assets/videos/6.mp4" autoplay muted loop></video> -->
             </div>
             <!-- App container -->
             <div class="app-container app-mobile-container">
-                <h2 class="section-heading">Download the Gori App</h2>
+                <h2 class="section-heading">Download the Auto Moto App</h2>
                 <div class="app">
                     <img src="./assets/img/google-play.png"/>
                     <img src="./assets/img/app-store.png"/>
                 </div>
-                <p>Nhận Bảng tin của Gori Việt Nam</p>
+                <p>Nhận Bảng tin của Auto Moto</p>
                 <input type="text" placeholder="Nhập email của bạn"/>
             </div>
         </div>
         <!-- Footer -->
-        <div id="footer" class="footer-mobile">
+        <div id="footer" class="footer-mobile"> 
             <div class="row">
                 <div class="col col-4 t col-mobile">
                     <div class="letpac"><i class="fa-solid fa-store"></i>MOTO VIETNAM</div>
-                  <p>Ra đời với mong muốn mang đến cho các bạn trẻ những bộ quần áo đơn giản nhưng vẫn thể hiện được cá tính riêng. Gori sẽ mang đến những sản phẩm không chỉ đẹp về mẫu mà còn chất lượng về chất vải cho bạn Chúng tớ quan tâm đến nhu cầu của mọi cá nhân và trân trọng từng sản phẩm gửi tới Gorier.</p>
+                  <p>Motorcycle design varies greatly to suit a range of different purposes: long-distance travel, commuting, cruising, sport (including racing), and off-road riding. Motorcycling is riding a motorcycle and being involved in other related social activities such as joining a motorcycle club and attending motorcycle rallies.</p>
                 </div>
                 <div class="col col-4 t col-mobile">
                     <div class="letpac">
@@ -295,7 +302,8 @@
                         FANPAGE FACEBOOK
                     </div>
                     <div class="col-img">
-                        <img src="./assets/img/Fanpage.jpg"/>
+                        <!-- <img src="./assets/img/Fanpage.jpg"/> -->
+                        <video class="video-fanpage" src="./assets/videos/7.mp4" autoplay muted loop></video>
                     </div>
                 </div>
                 </div>
@@ -324,12 +332,12 @@
                 <i class="fa-solid fa-xmark"></i>
             </div>
             <header class="modal-header">
-                <i class="fa-solid fa-briefcase"></i> Tickets
+                <i class="fa-solid fa-briefcase"></i> Deposit
             </header>
             <div class="modal-body">
                 <label for="ticket-quantity" class="modal-label">
                     <i class="fa-solid fa-cart-shopping"></i>
-                    Tickets, $15 per person
+                    Deposit quantity
                 </label>
                 <input id="ticket-quantity" type="text" class="modal-input" placeholder="How many ?">
                 <label for="ticket-email" class="modal-label">
@@ -382,8 +390,7 @@
     </script>
     <!-- cript slider -->
     <script>
-
-        const imgPosition = document.querySelectorAll(".aspect-ratio img");
+        const imgPosition = document.querySelectorAll(".aspect-ratio video"); //img or video
         const textPosition = document.querySelectorAll(".text-content")
         const imgContainer = document.querySelector(".aspect-ratio");
         const dotItem = document.querySelectorAll(".dot");
@@ -396,12 +403,14 @@
                 slider(index)
             })
         })
+
         // textPosition.forEach(function(text,index){
         //     text.style.left = text*100 + "%"
         //     dotItem[text].addEventListener("click", function(){
         //         slider(index)
         //     })
         // })
+
         function imgSlide(){
             index++;
             console.log(index)
@@ -416,7 +425,7 @@
             dotActive.classList.remove("active")
             dotItem[index].classList.add("active")
         }
-        setInterval(imgSlide,5000)
+        setInterval(imgSlide,10000)
     </script>
 
     <!-- Script Responsive mobile click menu -->
